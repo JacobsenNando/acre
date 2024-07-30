@@ -37,19 +37,17 @@
 						<div class="space-y-2">
 							<div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About</div>
 							<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
-								Dedicated to Helping You Thrive
+								Dedicado a tratar dinossauros
 							</h2>
 							<p
 								class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 							>
-								With over 15 years of experience, I'm passionate about helping individuals and
-								families overcome challenges and achieve their goals. My approach is collaborative,
-								evidence-based, and tailored to each client's unique needs.
-							</p>
+								Com mais de 10 anos de experiência, sou especialista em ajudar indivíduos,
+                                casais e famílias a superar desafios e alcançar uma vida mais saudável e feliz.
 						</div>
 					</div>
 					<img
-						src="/placeholder.svg"
+						src={imagem}
 						width="550"
 						height="310"
 						alt="About"
@@ -64,13 +62,12 @@
 					<div class="space-y-2">
 						<div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Services</div>
 						<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
-							Comprehensive Therapy Services
+							Terapia comprerensiva para dinossauros
 						</h2>
 						<p
 							class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 						>
-							I offer a range of therapy services to help you achieve your goals and improve your
-							overall well-being.
+							Eu ofereço uma variedade de serviços de terapia para ajudar você a superar desafios
 						</p>
 					</div>
 				</div>
