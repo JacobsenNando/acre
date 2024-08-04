@@ -1,134 +1,134 @@
 <script lang="ts">
-	import imagem from '$lib/components/img/3W2A0217.jpg';
+	import imagem from '$lib/components/img/3W2A0213.jpg';
 </script>
 
-<div class="flex min-h-[100dvh] flex-col">
-	<header class="flex h-14 items-center px-4 lg:px-6">
-		<nav class="ml-auto flex gap-4 sm:gap-6"></nav>
-	</header>
-	<main class="flex-1">
-		<section class="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-			<div class="container px-4 md:px-6">
-				<div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-					<div class="flex flex-col justify-center space-y-4">
-						<div class="space-y-2">
-							<h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-								Hanrry Acriano da silva
-							</h1>
-							<p class="max-w-[600px] text-muted-foreground md:text-xl">
-								Experiência com trataemnto de dinosauros pré contemporâneos e pós contemporâneos.
-							</p>
-						</div>
-					</div>
-					<img
-						src={imagem}
-						width="550"
-						height="550"
-						alt="Dr. Jane Doe"
-						class="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
-					/>
-				</div>
+<div class=" flex-co flex min-h-[100dvh]">
+	<!-- <header class="flex h-14 items-center px-4">
+		<nav class="ml-auto flex gap-4"></nav>
+	</header> -->
+	<main class="flex flex-col space-y-8">
+		<!-- Apresentação -->
+		<section class="flex flex-col items-center space-y-4 bg-[#030712] md:flex-row md:space-y-0">
+			<div class="space-y-2 md:w-1/2">
+				<h1
+					class="p-8 font-[#] text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+					style="color: rgb(204, 255, 255);"
+				>
+					Hanrry Luís Malaquias e Silva
+				</h1>
+				<p
+					class="max-w-[600px] p-8 text-muted-foreground md:text-xl"
+					style="color: rgb(204, 255, 255);"
+				>
+					Bem-vindo ao espaço de Hanrry Luís Malaquias e Silva, sou dedicado a ajudar você a
+					encontrar o equilíbrio emocional e o bem-estar. Com uma abordagem acolhedora e
+					profissional, estou aqui para apoiar sua jornada de autoconhecimento e crescimento
+					pessoal.
+				</p>
+			</div>
+			<div class="md:w-1/2">
+				<img
+					src={imagem}
+					width="550"
+					height="550"
+					alt="Hanrry Luís Malaquias e Silva"
+					class="mx-auto aspect-square overflow-hidden rounded-xl object-cover p-10 sm:w-full"
+				/>
 			</div>
 		</section>
-		<section id="about" class="w-full bg-muted py-12 md:py-24 lg:py-32">
-			<div class="container px-4 md:px-6">
-				<div class="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-					<div class="flex flex-col justify-center space-y-4">
-						<div class="space-y-2">
-							<div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About</div>
-							<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
-								Dedicado a tratar dinossauros
-							</h2>
-							<p
-								class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-							>
-								Com mais de 10 anos de experiência, sou especialista em ajudar indivíduos,
-                                casais e famílias a superar desafios e alcançar uma vida mais saudável e feliz.
-						</div>
-					</div>
-					<img
-						src={imagem}
-						width="550"
-						height="310"
-						alt="About"
-						class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-					/>
-				</div>
-			</div>
-		</section>
-		<section id="services" class="w-full py-12 md:py-24 lg:py-32">
-			<div class="container px-4 md:px-6">
-				<div class="flex flex-col items-center justify-center space-y-4 text-center">
-					<div class="space-y-2">
-						<div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Services</div>
-						<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
-							Terapia comprerensiva para dinossauros
-						</h2>
-						<p
-							class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-						>
-							Eu ofereço uma variedade de serviços de terapia para ajudar você a superar desafios
-						</p>
-					</div>
-				</div>
-				<div class="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-					<div class="grid gap-1">
-						<h3 class="text-xl font-bold">Individual Therapy</h3>
-						<p class="text-muted-foreground">
-							Explore personal challenges, develop coping strategies, and work towards positive
-							change.
-						</p>
-					</div>
-					<div class="grid gap-1">
-						<h3 class="text-xl font-bold">Couples Counseling</h3>
-						<p class="text-muted-foreground">
-							Improve communication, resolve conflicts, and strengthen your relationship.
-						</p>
-					</div>
-					<div class="grid gap-1">
-						<h3 class="text-xl font-bold">Family Therapy</h3>
-						<p class="text-muted-foreground">
-							Address family dynamics, improve understanding, and promote healthy relationships.
-						</p>
-					</div>
-					<div class="grid gap-1">
-						<h3 class="text-xl font-bold">Grief Counseling</h3>
-						<p class="text-muted-foreground">
-							Navigate the grieving process and find ways to cope with loss.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="contact" class="w-full bg-muted py-12 md:py-24 lg:py-32">
-			<div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
-				<div class="space-y-3">
-					<div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Contact</div>
-					<h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-						Schedule an Appointment
-					</h2>
-					<p
-						class="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+
+		<!-- Tipos de Atendimentos -->
+		<section class="bg w-full bg-[#265973] py-8">
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div class="mb-12 text-center">
+					<h2
+						class="text-3xl font-bold tracking-tight sm:text-4xl"
+						style="color: rgb(204, 255, 255);"
 					>
-						Fill out the form below to schedule a consultation and start your journey towards
-						personal growth and well-being.
+						Tipos de Atendimentos
+					</h2>
+					<p class="mt-3 text-xl text-gray-600 sm:mt-4" style="color: rgb(204, 255, 255);">
+						Conheça os diversos serviços de psicologia oferecidos para atender às suas necessidades
+						específicas.
 					</p>
 				</div>
-				<div class="mx-auto w-full max-w-sm space-y-2">
-					<form class="flex flex-col gap-2">
-						<!-- <Input type="text" placeholder="Name" class="max-w-lg flex-1" />
-                  <Input type="email" placeholder="Email" class="max-w-lg flex-1" />
-                  <Textarea placeholder="Message" class="max-w-lg flex-1" />
-                  <Button type="submit">Schedule Appointment</Button> -->
-					</form>
+				<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+					<div class="rounded-lg bg-white p-6 shadow-lg">
+						<h3 class="mb-2 text-xl font-semibold text-gray-600">Atendimento Individual</h3>
+						<p class="text-gray-600">
+							Sessões de terapia focadas no desenvolvimento pessoal, autoconhecimento e superação de
+							dificuldades emocionais.
+						</p>
+					</div>
+					<div class="rounded-lg bg-white p-6 text-gray-600 shadow-lg">
+						<h3 class="mb-2 text-xl font-semibold">Atendimento de Casal</h3>
+						<p class="text-gray-600">
+							Terapia para casais visando melhorar a comunicação, resolver conflitos e fortalecer o
+							relacionamento.
+						</p>
+					</div>
+					<div class="rounded-lg bg-white p-6 text-gray-600 shadow-lg">
+						<h3 class="mb-2 text-xl font-semibold">Atendimento Familiar</h3>
+						<p class="text-gray-600">
+							Sessões de terapia para famílias, trabalhando juntos para superar desafios e promover
+							um ambiente saudável.
+						</p>
+					</div>
+					<div class="rounded-lg bg-white p-6 text-gray-600 shadow-lg">
+						<h3 class="mb-2 text-xl font-semibold">Terapia Online</h3>
+						<p class="text-gray-600">
+							Sessões de terapia via internet, proporcionando conforto e flexibilidade para atender
+							às suas necessidades.
+						</p>
+					</div>
+					<div class="rounded-lg bg-white p-6 text-gray-600 shadow-lg">
+						<h3 class="mb-2 text-xl font-semibold">Atendimento para Crianças e Adolescentes</h3>
+						<p class="text-gray-600">
+							Terapia especializada para ajudar jovens a lidar com questões emocionais,
+							comportamentais e desenvolvimento pessoal.
+						</p>
+					</div>
+					<div class="rounded-lg bg-white p-6 text-gray-600 shadow-lg">
+						<h3 class="mb-2 text-xl font-semibold">Orientação Profissional</h3>
+						<p class="text-gray-600">
+							Sessões focadas em ajudar na escolha e desenvolvimento de carreira, promovendo
+							satisfação e realização profissional.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="w-full py-8">
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div class="mb-12 text-center">
+					<h2
+						class="text-3xl font-bold tracking-tight sm:text-4xl"
+						style="color: rgb(204, 255, 255);"
+					>
+						Quem precisa de psicoterapia?
+					</h2>
+					<p class="mt-3 text-xl text-gray-600 sm:mt-4" style="color: rgb(204, 255, 255);">
+						Vamos começar desmistificando a ideia de que “terapia é para louco”. Esse é um mito que
+						afasta muitas pessoas de buscar ajuda. A verdade é que todas as pessoas, em algum
+						momento da vida, podem enfrentar disfunções de ansiedade ou dificuldades emocionais.
+						Segundo a Organização Mundial da Saúde (OMS), 12% da população brasileira sofre com
+						algum nível de ansiedade patológica, que pode inclusive levar ao afastamento do
+						trabalho.
+					</p>
+					<p class="mt-3 text-xl text-gray-600 sm:mt-4" style="color: rgb(204, 255, 255);">
+						A psicoterapia é um processo terapêutico essencial para promover o bem-estar psicológico
+						e emocional. É indicada para quem enfrenta desafios como problemas de relacionamento,
+						ansiedade, depressão, estresse, entre outros. É acessível a pessoas de todas as idades,
+						classes sociais e condições socioeconômicas, podendo ser realizada de forma individual
+						ou em grupo.
+					</p>
+					<p class="mt-3 text-xl text-gray-600 sm:mt-4" style="color: rgb(204, 255, 255);">
+						Para os brasileiros que vivem no exterior, a terapia pode ser um espaço de acolhimento e
+						cura, ajudando a tratar feridas emocionais e oferecendo suporte em momentos de
+						dificuldade.
+					</p>
 				</div>
 			</div>
 		</section>
 	</main>
-	<footer
-		class="flex w-full shrink-0 flex-col items-center gap-2 border-t px-4 py-6 sm:flex-row md:px-6"
-	>
-		<p class="text-xs text-muted-foreground">&copy; 2024 Dr. Jane Doe. All rights reserved.</p>
-		<nav class="flex gap-4 sm:ml-auto sm:gap-6"></nav>
-	</footer>
 </div>
