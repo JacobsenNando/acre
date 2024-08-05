@@ -44,7 +44,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="w-full bg-[#000000] py-8">
+		<section id="sobre" class="w-full bg-[#000000] py-8">
 			<div class="flex flex-row-reverse">
 				<div class="space-y-2 md:w-1/2">
 					<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
