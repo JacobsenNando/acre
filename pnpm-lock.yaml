@@ -14,6 +14,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      embla-carousel-autoplay:
+        specifier: ^8.1.8
+        version: 8.1.8(embla-carousel@8.1.7)
       embla-carousel-svelte:
         specifier: ^8.1.7
         version: 8.1.7(svelte@4.2.18)
@@ -710,6 +713,11 @@ packages:
 
   electron-to-chromium@1.5.3:
     resolution: {integrity: sha512-QNdYSS5i8D9axWp/6XIezRObRHqaav/ur9z1VzCDUCH1XIFOr9WQk5xmgunhsTpjjgDy3oLxO/WMOVZlpUQrlA==}
+
+  embla-carousel-autoplay@8.1.8:
+    resolution: {integrity: sha512-H3vVKt4HR2PGeMlCutE3+a8wv7Jq1rg31Fjb8ZDZaiuSnT/1XTwA83KpkJ02BdImVJci9RS0uEBiXBax2kfnMQ==}
+    peerDependencies:
+      embla-carousel: 8.1.8
 
   embla-carousel-reactive-utils@8.1.7:
     resolution: {integrity: sha512-FDPcWjNtW04KSuvSfGbVeoB8yl5no3E0++HikO/uW12cNkMnWt68C4OBOakZQZlpUdRQSA9KCYoBuQzfpVGvZQ==}
@@ -2215,6 +2223,10 @@ snapshots:
   eastasianwidth@0.2.0: {}
 
   electron-to-chromium@1.5.3: {}
+
+  embla-carousel-autoplay@8.1.8(embla-carousel@8.1.7):
+    dependencies:
+      embla-carousel: 8.1.7
 
   embla-carousel-reactive-utils@8.1.7(embla-carousel@8.1.7):
     dependencies:

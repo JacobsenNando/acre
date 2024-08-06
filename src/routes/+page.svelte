@@ -1,4 +1,5 @@
 <script lang="ts">
+	import CarouselAtendimentos from '$lib/components/CarouselAtendimentos.svelte';
 	import imagem from '$lib/components/img/3W2A0213.jpg';
 	import imagem2 from '$lib/components/img/3W2A0234.jpg';
 </script>
@@ -36,10 +37,10 @@
 				<div class="md:w-1/2">
 					<img
 						src={imagem}
-						width="550"
-						height="550"
+						width="500"
+						height="500"
 						alt="Hanrry Luís Malaquias e Silva"
-						class="mx-auto aspect-square overflow-hidden rounded-xl object-cover p-10 sm:w-full"
+						class="mx-auto aspect-square overflow-hidden rounded-sm object-cover p-10 sm:w-full"
 					/>
 				</div>
 			</div>
@@ -102,49 +103,8 @@
 						específicas.
 					</p>
 				</div>
-				<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-					<div class="rounded-lg bg-white p-6 shadow-lg">
-						<h3 class="mb-2 text-xl font-semibold text-gray-600">Atendimento Individual</h3>
-						<p class="text-gray-600">
-							Sessões de terapia focadas no desenvolvimento pessoal, autoconhecimento e superação de
-							dificuldades emocionais.
-						</p>
-					</div>
-					<div class="rounded-lg bg-white p-6 text-gray-600 shadow-lg">
-						<h3 class="mb-2 text-xl font-semibold">Atendimento de Casal</h3>
-						<p class="text-gray-600">
-							Terapia para casais visando melhorar a comunicação, resolver conflitos e fortalecer o
-							relacionamento.
-						</p>
-					</div>
-					<div class="rounded-lg bg-white p-6 text-gray-600 shadow-lg">
-						<h3 class="mb-2 text-xl font-semibold">Atendimento Familiar</h3>
-						<p class="text-gray-600">
-							Sessões de terapia para famílias, trabalhando juntos para superar desafios e promover
-							um ambiente saudável.
-						</p>
-					</div>
-					<div class="rounded-lg bg-white p-6 text-gray-600 shadow-lg">
-						<h3 class="mb-2 text-xl font-semibold">Terapia Online</h3>
-						<p class="text-gray-600">
-							Sessões de terapia via internet, proporcionando conforto e flexibilidade para atender
-							às suas necessidades.
-						</p>
-					</div>
-					<div class="rounded-lg bg-white p-6 text-gray-600 shadow-lg">
-						<h3 class="mb-2 text-xl font-semibold">Atendimento para Crianças e Adolescentes</h3>
-						<p class="text-gray-600">
-							Terapia especializada para ajudar jovens a lidar com questões emocionais,
-							comportamentais e desenvolvimento pessoal.
-						</p>
-					</div>
-					<div class="rounded-lg bg-white p-6 text-gray-600 shadow-lg">
-						<h3 class="mb-2 text-xl font-semibold">Orientação Profissional</h3>
-						<p class="text-gray-600">
-							Sessões focadas em ajudar na escolha e desenvolvimento de carreira, promovendo
-							satisfação e realização profissional.
-						</p>
-					</div>
+				<div>
+					<CarouselAtendimentos/>
 				</div>
 			</div>
 		</section>
@@ -178,6 +138,8 @@
 						dificuldade.
 					</p>
 				</div>
+
+				
 			</div>
 		</section>
 	</main>
