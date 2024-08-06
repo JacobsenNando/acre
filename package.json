@@ -37,6 +37,7 @@
 	"dependencies": {
 		"bits-ui": "^0.21.13",
 		"clsx": "^2.1.1",
+		"embla-carousel-autoplay": "^8.1.8",
 		"embla-carousel-svelte": "^8.1.7",
 		"mode-watcher": "^0.4.1",
 		"svelte-radix": "^1.1.0",
