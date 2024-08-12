@@ -2,11 +2,18 @@
 	import CarouselAtendimentos from '$lib/components/CarouselAtendimentos.svelte';
 	import imagem from '$lib/components/img/3W2A0213.jpg';
 	import imagem2 from '$lib/components/img/3W2A0234.jpg';
+	
 </script>
 
 <div class=" flex min-h-[100dvh] flex-col">
 	<!-- <header class="flex h-14 items-center px-4">
-		<nav class="ml-auto flex gap-4">
+		<nav class="ml-auto w-full flex gap-4 bg-white">
+			<img
+						src={Brain}
+						width="50"
+						height="50"
+						alt="Brain"
+					/>
 			<a
 				href="https://wa.me/5568999236300?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento."
 				>Whastapp</a
