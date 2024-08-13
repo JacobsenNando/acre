@@ -1,10 +1,14 @@
 <script lang="ts">
-	import { ModeWatcher } from "mode-watcher";
+	import { ModeWatcher } from 'mode-watcher';
 	import '../app.css';
-  </script>
-   
-   <ModeWatcher defaultMode={'dark'} />
-  
+	import Navbar from '$lib/components/Navbar.svelte';
+	
+</script>
+
+<ModeWatcher defaultMode={'dark'} />
+
+<Navbar />
+
 <div class="flex h-full w-full flex-col">
 	<slot />
 </div>
