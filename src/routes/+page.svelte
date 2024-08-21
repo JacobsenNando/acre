@@ -3,11 +3,12 @@
 	import imagem from '$lib/components/img/3W2A0213.jpg';
 	import imagem2 from '$lib/components/img/3W2A0234.jpg';
 	import Psico from '$lib/components/img/Psico.png';
+	import Form from '$lib/components/Form.svelte';
 </script>
 
 <main class="flex flex-col">
 	<!-- Apresentação -->
-	<section id="Home" class="flex h-screen w-full items-center justify-around bg-[#030712] pb-8">
+	<section id="Home" class="flex w-full items-center justify-around bg-[#030712] pb-8">
 		<div class="flex w-1/3 flex-col p-10">
 			<div class="mb-4">
 				<h1 class="text-6xl font-bold tracking-tight">Hanrry Luís Malaquias e Silva</h1>
@@ -27,10 +28,11 @@
 	<!-- Sobre -->
 	<section
 		id="sobre"
-		class="flex h-screen w-full flex-row-reverse items-center justify-around bg-[#265973]"
+		class="flex w-full flex-row-reverse items-center justify-around bg-[#265973] py-8"
 	>
-		<div class="flex w-1/3 flex-col p-10">
-			<h1 class="text-6xl font-bold tracking-tight">Quem é Hanrry Luís Malaquias e Silva?</h1>
+		<div class="flex w-1/3 flex-col">
+			<h1 class="text-6xl font-bold tracking-tight">Quem é Hanrry?</h1>
+
 			<p class="mt-3 text-xl">
 				Hanrry Luís Malaquias e Silva é um psicólogo dedicado, com vasta experiência em ajudar
 				indivíduos a alcançar o equilíbrio emocional e o bem-estar. Com uma abordagem acolhedora e
@@ -60,7 +62,7 @@
 		</div>
 	</section>
 	<!-- Quem precisa de psicoterapia? -->
-	<section class="flex h-screen w-full flex-row items-center justify-around bg-[#030712]">
+	<section class="flex w-full flex-row items-center justify-around bg-[#030712]">
 		<div class="flex w-1/3 flex-col p-10">
 			<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Quem precisa de psicoterapia?</h2>
 			<p class="mt-3 text-xl sm:mt-4">
@@ -102,5 +104,7 @@
 		</div>
 	</section>
 	<!--Form-->
-	<section></section>
+	<section>
+		<Form />
+	</section>
 </main>
