@@ -4,16 +4,15 @@
 	import imagem2 from '$lib/components/img/3W2A0234.jpg';
 	import Psico from '$lib/components/img/Psico.png';
 	import Form from '$lib/components/Form.svelte';
+	import logo from '$lib/components/img/LogoHarry.png';
 </script>
 
 <main class="flex flex-col">
 	<!-- Apresentação -->
 	<section id="Home" class="flex w-full items-center justify-around bg-[#030712] pb-8">
 		<div class="flex w-1/3 flex-col p-10">
-			<div class="mb-4">
-				<h1 class="text-6xl font-bold tracking-tight">Hanrry Luís Malaquias e Silva</h1>
-				<h2 class="text-3xl font-bold tracking-tight">Psicólogo Clínico</h2>
-				<h3 class="text-1xl font-bold tracking-tight">CRM 24/04229</h3>
+			<div class="">
+				<img src={logo} alt="Logo" />
 			</div>
 			<p class="pt-10 text-3xl">
 				Bem-vindo ao espaço de Hanrry Luís Malaquias e Silva, sou dedicado a ajudar você a encontrar
@@ -22,7 +21,7 @@
 			</p>
 		</div>
 		<div class="flex w-1/3 justify-center">
-			<img src={imagem} width="550" height="550" alt="Hanrry Luís Malaquias e Silva" />
+			<img src={imagem} width="560" alt="Hanrry Luís" class="rounded-xl" />
 		</div>
 	</section>
 	<!-- Sobre -->
@@ -89,11 +88,11 @@
 		</div>
 	</section>
 	<!-- Atendimentos -->
-	<section id="atendimentos" class="h-full w-full bg-[#265973] pb-20 pt-8">
-		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+	<section id="atendimentos" class=" w-full bg-[#265973] pb-20 pt-8">
+		<div class="mx-auto max-w-7xl px-4">
 			<div class="mb-12 h-full text-center">
 				<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Tipos de Atendimentos</h2>
-				<p class="mt-3 text-xl sm:mt-4">
+				<p class="mt-3 text-xl">
 					Conheça os diversos serviços de psicologia oferecidos para atender às suas necessidades
 					específicas.
 				</p>
@@ -104,7 +103,8 @@
 		</div>
 	</section>
 	<!--Form-->
-	<section>
+	<section class="bg-[#030712]pb-20 flex w-full flex-col items-center pt-8">
+		<h2 class="mb-5 text-3xl font-bold tracking-tight">Agende uma consulta</h2>
 		<Form />
 	</section>
 </main>
