@@ -4,7 +4,19 @@
 	import imagem2 from '$lib/components/img/3W2A0234.jpg';
 	import Psico from '$lib/components/img/Psico.png';
 	import Form from '$lib/components/Form.svelte';
-	import logo from '$lib/components/img/LogoHarry.png';
+	import logo from '$lib/components/img/Hanrry luís.png';
+	import type { PageData, ActionData } from './$types';
+	import { toast } from 'svelte-sonner';
+	export let data: PageData;
+	export let form: ActionData;
+
+	$: {
+		if (form?.status === 200) {
+			toast.success('Event has been created');
+		} else if (form?.status === 500) {
+			toast.error('Algo deu errado!');
+		}
+	}
 </script>
 
 <main class="flex flex-col">
@@ -14,11 +26,12 @@
 			<div class="">
 				<img src={logo} alt="Logo" />
 			</div>
-			<p class="pt-10 text-3xl">
-				Bem-vindo ao espaço de Hanrry Luís Malaquias e Silva, sou dedicado a ajudar você a encontrar
-				o equilíbrio emocional e o bem-estar. Com uma abordagem acolhedora e profissional, estou
-				aqui para apoiar sua jornada de autoconhecimento e crescimento pessoal.
-			</p>
+			<p class="pt-10 text-3xl"></p>
+			<blockquote class="mt-6 border-l-2 pl-6 italic">
+				"Bem-vindo ao espaço de Hanrry Luís Malaquias e Silva, sou dedicado a ajudar você a
+				encontrar o equilíbrio emocional e o bem-estar. Com uma abordagem acolhedora e profissional,
+				estou aqui para apoiar sua jornada de autoconhecimento e crescimento pessoal."
+			</blockquote>
 		</div>
 		<div class="flex w-1/3 justify-center">
 			<img src={imagem} width="560" alt="Hanrry Luís" class="rounded-xl" />
@@ -67,7 +80,7 @@
 			<p class="mt-3 text-xl sm:mt-4">
 				Vamos começar desmistificando a ideia de que “terapia é para louco”. Esse é um mito que
 				afasta muitas pessoas de buscar ajuda. A verdade é que todas as pessoas, em algum momento da
-				vida, podem enfrentar disfunções de ansiedade ou dificuldades emocionais. Segundo a
+				vida, podem enfrentar disfunções de ansiedade ou dificuldades emocionais. SegFechar a
 				Organização Mundial da Saúde (OMS), 12% da população brasileira sofre com algum nível de
 				ansiedade patológica, que pode inclusive levar ao afastamento do trabalho.
 			</p>
