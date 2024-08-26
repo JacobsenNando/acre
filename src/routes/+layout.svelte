@@ -3,6 +3,7 @@
 	import '../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import { Toaster } from '$lib/components/ui/sonner';
+	import { inject } from '@vercel/analytics';
 </script>
 
 <ModeWatcher defaultMode={'dark'} />
