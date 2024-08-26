@@ -7,7 +7,7 @@
 	import logo from '$lib/components/img/Hanrry luís.png';
 	import type { PageData, ActionData } from './$types';
 	import { toast } from 'svelte-sonner';
-	export let data: PageData;
+	// export let data: PageData;
 	export let form: ActionData;
 
 	$: {
