@@ -1,23 +1,52 @@
-node_modules
+# Node modules
+node_modules/
+pnpm-lock.yaml
+package-lock.json
 
-# Output
-.output
-.vercel
-/.svelte-kit
-/build
+# Compiled output
+dist/
+build/
+out/
 
-# OS
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+
+# Dependency directories
+jspm_packages/
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# OS-specific files
 .DS_Store
 Thumbs.db
 
-# Env
-.env
-.env.*
-!.env.example
-!.env.test
+# Configuration files
+.npmrc
+.prettierignore
+.prettierrc
+.eslintignore
+.eslintrc.js
 
-# Vite
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+# Svelte and Tailwind
+.svelte-kit/
+*.svelte
+tailwind.config.js
+postcss.config.js
+svelte.config.js
 
-pnpm-lock.yaml
+# Miscellaneous
+*.tgz
+*.gz
+*.zip
+*.tar
+
+# Other files
+*.swp
+*.swo
