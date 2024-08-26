@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Actions } from "./$types";
-import transporter from "$lib/server/mail.server";
+import transporter from "$lib/server/mail.server.ts";
 import { SENDER_EMAIL, EMAIL_RECEVER } from "$env/static/private";
 import sanitizeHtml from "sanitize-html";
-//commit
+
 export const actions: Actions = {
   enviarEmail: async ({ request }) => {
     try {
