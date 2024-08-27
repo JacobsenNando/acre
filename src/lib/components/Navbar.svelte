@@ -1,11 +1,9 @@
 <script>
-	import Button from './ui/button/button.svelte';
+	import Tabs from "$lib/components/ui/animation/AnimatedTabs.svelte";
 </script>
 
-<head class="flex h-9 w-full justify-center">
-	<nav class="flex w-full items-center border-b-4">
-		<Button class="font-semibold" variant="link" href="#Home">Home</Button>
-		<Button variant="link" href="#sobre">Sobre</Button>
-		<Button variant="link" href="#atendimentos">Atendimentos</Button>
+<head class="flex w-full">
+	<nav class="flex w-full justify-center items-center py-2 border-y-0">
+		<Tabs />
 	</nav>
 </head>

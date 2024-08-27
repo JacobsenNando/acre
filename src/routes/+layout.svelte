@@ -7,7 +7,6 @@
 </script>
 
 <ModeWatcher defaultMode={'dark'} />
-
 <Navbar />
 
 <Toaster position="bottom-left" richColors />
