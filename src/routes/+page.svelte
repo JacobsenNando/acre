@@ -4,11 +4,12 @@
 	import imagem2 from "$lib/components/img/3W2A0234.webp";
 	import Psico from "$lib/components/img/Psico.webp";
 	import Form from "$lib/components/Form.svelte";
-	import logo from "$lib/components/img/LogoSolo.png";
+	import logo from "$lib/components/img/LogoSolo.webp";
 	import type { PageData, ActionData } from "./$types";
 	import { toast } from "svelte-sonner";
 	import WordsFadeIn from "$lib/components/ui/animation/WordsFadeIn.svelte";
 	import Quest from "$lib/components/Quest.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 
 	// export let data: PageData;
 	export let form: ActionData;
@@ -145,12 +146,14 @@
 		</div>
 	</section>
 	<!--Form-->
-	<section class="bg-[#030712]pb-20 flex w-full flex-col items-center pt-8">
+	<section class="bg-[#030712] mb-10 flex w-full flex-col items-center mt-8">
 		<h2 class="mb-5 text-3xl font-bold tracking-tight">Agende uma consulta</h2>
 		<Form />
+	</section>
+	<section class="bg-[#265973] pb-20 flex w-full flex-col items-center pt-8">
+		<h2 class="mb-5 text-3xl font-bold tracking-tight mt-5">
+			Perguntas frequentes
+		</h2>
 		<Quest />
 	</section>
-	<section
-		class="bg-[#030712]pb-20 flex w-full flex-col items-center pt-8"
-	></section>
 </main>
