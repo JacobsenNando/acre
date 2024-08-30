@@ -9,7 +9,6 @@
 	import { toast } from "svelte-sonner";
 	import WordsFadeIn from "$lib/components/ui/animation/WordsFadeIn.svelte";
 	import Quest from "$lib/components/Quest.svelte";
-	import Footer from "$lib/components/Footer.svelte";
 
 	// export let data: PageData;
 	export let form: ActionData;
