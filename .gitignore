@@ -28,26 +28,5 @@ jspm_packages/
 .DS_Store
 Thumbs.db
 
-# Configuration files
-.npmrc
-.prettierignore
-.prettierrc
-.eslintignore
-.eslintrc.js
-
 # Svelte and Tailwind
 .svelte-kit/
-*.svelte
-tailwind.config.js
-postcss.config.js
-svelte.config.js
-
-# Miscellaneous
-*.tgz
-*.gz
-*.zip
-*.tar
-
-# Other files
-*.swp
-*.swo
