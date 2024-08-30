@@ -1,14 +1,22 @@
 <script>
   import { Motion, AnimateSharedLayout } from "svelte-motion";
+  import { TwitterLogo } from "svelte-radix";
   const tabs = [
     {
       title: "Home",
+      href: "/",
     },
     {
       title: "Sobre",
+      href: "#sobre",
     },
     {
       title: "Serviços",
+      href: "#atendimentos",
+    },
+    {
+      title: "Contatos",
+      href: "#contatos",
     },
   ];
   let activeIdx = 0;
@@ -17,7 +25,8 @@
 <div class="relative flex flex-wrap items-center justify-center">
   <AnimateSharedLayout>
     {#each tabs as item, i}
-      <button
+      <a
+        href={item.href}
         class="group relative z-[1] rounded-full px-4 py-2 {activeIdx === i
           ? 'z-0'
           : ''} "
@@ -45,7 +54,7 @@
         >
           {item.title}
         </span>
-      </button>
+      </a>
     {/each}
   </AnimateSharedLayout>
 </div>
