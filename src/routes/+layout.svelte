@@ -11,6 +11,6 @@
 
 <Toaster position="bottom-left" richColors />
 
-<div class="flex h-full w-full flex-col">
+<main class="flex flex-col bg-[#030712]">
 	<slot />
-</div>
+</main>
