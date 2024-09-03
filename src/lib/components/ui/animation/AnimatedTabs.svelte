@@ -1,6 +1,5 @@
 <script>
   import { Motion, AnimateSharedLayout } from "svelte-motion";
-  import { TwitterLogo } from "svelte-radix";
   const tabs = [
     {
       title: "Home",

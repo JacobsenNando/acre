@@ -27,16 +27,8 @@
 <svelte:window bind:scrollY />
 {#if isMobile}
   <head
-    class="flex w-full justify-center items-center py-2 border-y-0 fixed bg-background z-20 gap-32"
-    >{#if scrollY > 600}
-      <img
-        src={logo}
-        alt=""
-        loading="lazy"
-        class="select-none w-8"
-        transition:fade={{ delay: 0, duration: 300 }}
-      />
-    {/if}
+    class="w-full flex justify-center items-center py-2 fixed bg-gradient-to-b from-background from-0% to-transparent z-20"
+  >
     <Tabs />
   </head>
 {:else}
