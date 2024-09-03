@@ -10,12 +10,10 @@
   <span class="text-sm text-muted-foreground w-1/3"
     >© 2024 Hanrry Luís. Todos direitos reservados.</span
   >
-  <div class="w-1/3 justify-center items-center flex z-10 flex-row gap-5">
-    <div class="flex flex-row items-center gap-2">
-      <img src={logo} alt="" loading="lazy" class="select-none ml-5 w-10" />
-      <WordsFadeIn class="font-thin text-lg" words="HANRRY LUÍS" />
-    </div>
-    <h1 class="font-thin">CRP 24/04229</h1>
+
+  <div class="flex flex-row items-center gap-2">
+    <img src={logo} alt="" loading="lazy" class="select-none ml-5 w-10" />
+    <WordsFadeIn class="font-thin text-lg" words="HANRRY LUÍS" />
   </div>
 
   <div class="flex space-x-4 w-1/3 justify-end">

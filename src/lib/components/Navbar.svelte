@@ -58,10 +58,9 @@
     <div class="w-1/3">
       <Tabs />
     </div>
-    {#if scrollY <= 3128}
-      <div class="w-1/3 flex justify-end items-center mr-5">
-        <h1 class="font-thin">CRP 24/04229</h1>
-      </div>
-    {/if}
+
+    <div class="w-1/3 flex justify-end items-center mr-5">
+      <h1 class="font-thin">CRP 24/04229</h1>
+    </div>
   </head>
 {/if}
