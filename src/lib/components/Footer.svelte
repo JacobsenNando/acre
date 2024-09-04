@@ -6,9 +6,7 @@
   import WordsFadeIn from "./ui/animation/WordsFadeIn.svelte";
 </script>
 
-<div
-  class="flex items-center flex-col-reverse justify-evenly p-4 border w-full"
->
+<div class="flex items-center flex-col-reverse justify-evenly p-4 w-full">
   <div class="flex flex-col w-full justify-center items-center">
     <span class="text-sm text-muted-foreground flex justify-center"
       >© 2024 Hanrry Luís. Todos direitos reservados.</span

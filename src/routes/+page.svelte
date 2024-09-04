@@ -36,7 +36,7 @@
 >
   <div class="flex md:w-1/3 flex-col items-center justify-center">
     <div class="flex flex-col justify-center items-center gap-5">
-      <img src={logo} alt="Logo" class="mt-20 w-3/6 md:w-5/6" />
+      <img src={logo} alt="Logo" class=" mt-16 md:mt-20 w-3/6 md:w-5/6" />
 
       <WordsFadeIn
         class="md:font-thin md:text-8xl text-6xl font-medium"
@@ -48,9 +48,9 @@
       <img src={imagem} width="250" alt="Hanrry Luís" class="rounded-xl" />
     </div>
 
-    <blockquote class="w-10/12 border-l-2 md:mt-10 md:pl-6 italic">
+    <blockquote class="w-10/12 border-l-2 p-2 md:mt-10 md:pl-6 italic">
       <WordsFadeIn
-        class="text-xl"
+        class="text-xl text-left tracking-tight"
         words="Bem-vindo ao meu espaço, sou dedicado a ajudar você a
 				encontrar o equilíbrio emocional e o bem-estar."
       />
@@ -64,9 +64,14 @@
 <!-- Sobre -->
 <section
   id="sobre"
-  class="flex w-full flex-col md:flex-row-reverse items-center justify-around bg-gradient-to-t from-background from-0% to-[#265973] py-8"
+  class="flex w-full gap-3 flex-col md:flex-row-reverse items-center justify-around bg-gradient-to-t from-background from-0% to-[#265973] py-8"
 >
   <div class="md:hidden w-10/12 flex-col">
+    <h1
+      class="md:text-6xl md:font-bold font-semibold text-3xl text-nowrap tracking-tight"
+    >
+      Quem é Hanrry?
+    </h1>
     <p class="mt-3 text-xl">
       Sou Hanrry Luís Malaquias e Silva, um psicólogo dedicado a ajudar você a
       encontrar equilíbrio emocional e bem-estar. Com anos de experiência,
@@ -109,10 +114,10 @@
       a superar os desafios de viver longe de casa.
     </p>
   </div>
-  <div class="flex md:w-1/3 justify-center">
+  <div class="flex w-5/6 md:w-1/3 justify-center">
     <img
       src={imagem2}
-      width="300 md:550"
+      width="560"
       alt="Hanrry Luís Malaquias e Silva"
       class="rounded-xl"
     />
@@ -121,7 +126,7 @@
 <!-- Quem precisa de psicoterapia? -->
 <section class="flex w-full flex-row items-center justify-around">
   <div class="flex md:w-1/3 flex-col p-10">
-    <h2 class="text-3xl font-bold tracking-tight">
+    <h2 class="md:text-6xl md:font-bold font-semibold text-3xl tracking-tight">
       Quem precisa de psicoterapia?
     </h2>
     <p class="mt-3 text-xl">
