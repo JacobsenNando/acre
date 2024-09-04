@@ -10,6 +10,7 @@
   import WordsFadeIn from "$lib/components/ui/animation/WordsFadeIn.svelte";
   import Quest from "$lib/components/Quest.svelte";
   import Footer from "$lib/components/Footer.svelte";
+  import CarouselMobile from "$lib/components/CarouselMobile.svelte";
   let scrollY = 0;
   // export let data: PageData;
   export let form: ActionData;
@@ -166,20 +167,8 @@
         suas necessidades específicas.
       </p>
     </div>
-    <div class="hidden md:flex w-full">
-      <p>
-        Atendimento para Crianças e Adolescentes Terapia especializada para
-        ajudar jovens a lidar com questões emocionais, comportamentais e
-        desenvolvimento pessoal
-      </p>
-      <p>
-        Transtornos Alimentares Sessões de terapia para famílias, trabalhando
-        juntos para superar desafios e promover um ambiente saudável.
-      </p>
-      <p>
-        Terapia Online Sessões de terapia via internet, proporcionando conforto
-        e flexibilidade para atender às suas necessidades.
-      </p>
+    <div class="flex md:hidden w-full justify-center items-center">
+      <CarouselMobile />
     </div>
 
     <div class="hidden md:flex w-full">
