@@ -14,6 +14,7 @@
     <span class="text-sm text-muted-foreground">
       Feito com ❤️ por <a href="https://github.com/JacobsenNando">Jacobsen</a>
     </span>
+    <span>CRP 24/04229 </span>
   </div>
 
   <div class="flex justify-evenly items-center w-full">
