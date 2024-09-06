@@ -63,7 +63,7 @@
         <Card.Root class="h-[36rem]">
           <Card.Content class="flex flex-col h-full p-0 ">
             <a
-              href="https://wa.me/5568999236300?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento!"
+              href="https://wa.me/556892556435?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento!"
             >
               <img
                 src={tratamento.image}
