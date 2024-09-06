@@ -2,51 +2,49 @@
   import Autoplay from "embla-carousel-autoplay";
   import * as Card from "$lib/components/ui/card/index.js";
   import * as Carousel from "$lib/components/ui/carousel/index.js";
-  import Solo from "$lib/components/img/Solo.webp";
-  import Online from "$lib/components/img/Online.webp";
-  import Food from "$lib/components/img/Food.webp";
+  import Event from "$lib/components/img/Event.svg";
+  import Psico from "$lib/components/img/Psico.svg";
+  import Sports from "$lib/components/img/Sports.svg";
+  import Engine from "$lib/components/img/Engine.svg";
+  import Ansiedade from "$lib/components/img/Ansiedade.svg";
+  import Depressao from "$lib/components/img/Depressao.svg";
+  import { Separator } from "$lib/components/ui/separator";
   let tratamentos = [
     {
-      title: "Atendimento Individual",
+      title: "Consulta Clinica",
       description:
-        "Sessões de terapia focadas no desenvolvimento pessoal, autoconhecimento e superação de dificuldades emocionais.",
-      image: Solo,
+        "Sessões de terapia focadas em tratamentos comprovados para diversas demandas emocionais e psicológicas.",
+      image: Psico,
     },
     {
-      title: "Terapia Online",
+      title: "Serviço Organizacional",
       description:
-        "Sessões de terapia via internet, proporcionando conforto e flexibilidade para atender às suas necessidades.",
-      image: Online,
+        "Consultoria e intervenções psicológicas para melhorar o ambiente de trabalho e a performance das equipes.",
+      image: Engine,
     },
     {
-      title: "Transtornos Alimentares",
+      title: "Psicologia Esportiva",
       description:
-        "Sessões de terapia para famílias, trabalhando juntos para superar desafios e promover um ambiente saudável.",
-      image: Food,
+        "Aumento da performance através do fortalecimento mental, foco e controle emocional para atletas.",
+      image: Sports,
     },
     {
-      title: "Atendimento para Crianças e Adolescentes",
+      title: "Cursos e Palestras",
       description:
-        "Terapia especializada para ajudar jovens a lidar com questões emocionais, comportamentais e desenvolvimento pessoal",
-      image: Solo,
+        "Programas de capacitação e palestras voltadas ao desenvolvimento pessoal e profissional.",
+      image: Event,
     },
     {
-      title: "Terapia Online",
+      title: "Tratamento para Ansiedade",
       description:
-        "Sessões de terapia via internet, proporcionando conforto e flexibilidade para atender às suas necessidades.",
-      image: Online,
+        "Sessões focadas em reduzir sintomas de ansiedade, ajudando você a recuperar o controle emocional e a viver com mais tranquilidade.",
+      image: Ansiedade,
     },
     {
-      title: "Transtornos Alimentares",
+      title: "Tratamento para Depressão",
       description:
-        "Sessões de terapia para famílias, trabalhando juntos para superar desafios e promover um ambiente saudável.",
-      image: Food,
-    },
-    {
-      title: "Atendimento para Crianças e Adolescentes",
-      description:
-        "Terapia especializada para ajudar jovens a lidar com questões emocionais, comportamentais e desenvolvimento pessoal",
-      image: Solo,
+        "Terapia especializada para lidar com a depressão, promovendo a recuperação do bem-estar e o resgate da autoestima.",
+      image: Depressao,
     },
   ];
 
@@ -61,22 +59,30 @@
 >
   <Carousel.Content>
     {#each tratamentos as tratamento}
-      <Carousel.Item class="basis-1/3 flex h-full">
+      <Carousel.Item class="basis-1/4 flex h-full">
         <Card.Root class="h-[36rem]">
-          <Card.Content class="flex items-center justify-between flex-col">
-            <div class="flex-col flex w-full">
-              <a
-                href="https://wa.me/5568999236300?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento!"
+          <Card.Content class="flex flex-col h-full p-0 ">
+            <a
+              href="https://wa.me/5568999236300?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento!"
+            >
+              <img
+                src={tratamento.image}
+                alt={tratamento.title}
+                class="rounded-t-xl bg-tr"
+              />
+
+              <div
+                class="p-4 w-full flex h-full justify-start flex-col items-center text-center gap-5"
               >
-                <img
-                  src={tratamento.image}
-                  alt={tratamento.title}
-                  class="w-full"
-                />
-              </a>
-              <h2 class="text-4xl font-semibold">{tratamento.title}</h2>
-            </div>
-            <p>{tratamento.description}</p>
+                <h2
+                  class="text-4xl font-semibold w-full flex flex-col items-center justify-center min-h-[5rem]"
+                >
+                  {tratamento.title}
+                </h2>
+                <Separator orientation="horizontal" class="flex w-9/12" />
+                <p class="text-lg w-full">{tratamento.description}</p>
+              </div>
+            </a>
           </Card.Content>
         </Card.Root>
       </Carousel.Item>

@@ -2,7 +2,8 @@
   import CarouselAtendimentos from "$lib/components/CarouselAtendimentos.svelte";
   import imagem from "$lib/components/img/3W2A0213.webp";
   import imagem2 from "$lib/components/img/3W2A0234.webp";
-  import Psico from "$lib/components/img/Psico.webp";
+  import imagem3 from "$lib/components/img/3W2A0330.webp";
+  import Psico from "$lib/components/img/Psico.svg";
   import Form from "$lib/components/Form.svelte";
   import logo from "$lib/components/img/LogoSolo.webp";
   import type { PageData, ActionData } from "./$types";
@@ -20,6 +21,8 @@
       toast.success("Solicitação de contato enviada");
     } else if (form?.status === 500) {
       toast.error("Algo deu errado!");
+    } else if (form?.status) {
+      toast.error(`Erro ${form.status}: Ocorreu um problema.`);
     }
   }
 </script>
@@ -32,7 +35,7 @@
 
 <!-- Apresentação -->
 <section
-  class="flex w-full h-screen items-center flex-col md:flex-row md:justify-evenly bg-gradient-to-b from-background from-40% to-[#265973] py-0 md:py-8"
+  class="flex w-full h-screen items-center flex-col md:flex-row bg-gradient-to-b from-background from-40% to-[#265973] py-0 md:py-8 md:justify-evenly"
 >
   <div class="flex md:w-1/3 flex-col items-center justify-center">
     <div class="flex flex-col justify-center items-center gap-5">
@@ -152,7 +155,13 @@
     </p>
   </div>
   <div class="hidden md:flex w-1/3 justify-center">
-    <img src={Psico} width="550" height="550" alt="psico" />
+    <img
+      src={imagem3}
+      width="550"
+      height="550"
+      alt="psico"
+      class="rounded-xl"
+    />
   </div>
 </section>
 <!-- Atendimentos -->

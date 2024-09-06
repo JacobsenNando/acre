@@ -14,10 +14,10 @@
     <span class="text-sm text-muted-foreground">
       Feito com ❤️ por <a href="https://github.com/JacobsenNando">Jacobsen</a>
     </span>
-    <span>CRP 24/04229 </span>
+    <span class="md:hidden">CRP 24/04229 </span>
   </div>
 
-  <div class="flex justify-evenly items-center w-full">
+  <!-- <div class="flex justify-evenly items-center w-full">
     <div class="flex flex-row items-center gap-2">
       <img src={logo} alt="" loading="lazy" class="select-none md:ml-5 w-10" />
       <WordsFadeIn class="font-thin text-lg" words="HANRRY LUÍS" />
@@ -52,5 +52,5 @@
         >
       </button>
     </div>
-  </div>
+  </div> -->
 </div>
