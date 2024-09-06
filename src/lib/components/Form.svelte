@@ -78,7 +78,7 @@
           type="button"
           class="self-center mt-10 rounded-lg font-semibold uppercase px-1 flex justify-center flex-col items-center gap-2"
         >
-          <img src={zap} alt="Whatsapp" class="md:w-3/6 w-2/6" />
+          <img src={zap} alt="Whatsapp" class="md:w-3/6 w-2/6 z-0" />
           <a
             href="https://wa.me/5568992556435?text=Ol%C3%A1%2C%20vim%20pelo%20site!%0AGostaria%20de%20saber%20mais%20sobre%20as%20consultas."
             target="_blank"
@@ -97,9 +97,9 @@
           type="button"
           class="self-center mt-10 rounded-lg font-semibold uppercase px-1 flex justify-center flex-col items-center gap-2"
         >
-          <img class="md:w-3/6 w-2/6" alt="insta" src={insta} />
+          <img class="md:w-3/6 w-2/6 z-0" alt="insta" src={insta} />
           <a
-            href="https://wa.me/5568992556435?text=Ol%C3%A1%2C%20vim%20pelo%20site!%0AGostaria%20de%20saber%20mais%20sobre%20as%20consultas."
+            href="https://www.instagram.com/psihanrryluis/"
             target="_blank"
             rel="noopener noreferrer"
             class="text-center border-2 border-gray-700 rounded-lg px-1 tracking-tight"
