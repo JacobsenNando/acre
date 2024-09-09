@@ -17,13 +17,13 @@
     <span class="md:hidden">CRP 24/04229 </span>
   </div>
 
-  <!-- <div class="flex justify-evenly items-center w-full">
-    <div class="flex flex-row items-center gap-2">
+  <div class="md:flex hidden justify-evenly items-center w-full">
+    <!-- <div class="flex flex-row items-center gap-2">
       <img src={logo} alt="" loading="lazy" class="select-none md:ml-5 w-10" />
       <WordsFadeIn class="font-thin text-lg" words="HANRRY LUÍS" />
-    </div>
+    </div> -->
 
-    <div class="flex space-x-4 md:w-1/3 justify-end">
+    <div class="flex space-x-4 w-full justify-end">
       <button type="button">
         <a
           href="https://www.instagram.com/psihanrryluis/"
@@ -35,16 +35,7 @@
       </button>
       <button type="button">
         <a
-          href="https://www.instagram.com/psihanrryluis/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Linkedin /></a
-        >
-      </button>
-      <button type="button">
-        <a
-          href="https://www.instagram.com/psihanrryluis/"
+          href="https://youtube.com/@psihanrryluis1?si=Yp7FyCv_TyMtcKh1"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -52,5 +43,5 @@
         >
       </button>
     </div>
-  </div> -->
+  </div>
 </div>
