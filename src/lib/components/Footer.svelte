@@ -11,9 +11,6 @@
     <span class="text-sm text-muted-foreground flex justify-center"
       >© 2024 Hanrry Luís. Todos direitos reservados.</span
     >
-    <span class="text-sm text-muted-foreground">
-      Feito com ❤️ por <a href="https://github.com/JacobsenNando">Jacobsen</a>
-    </span>
     <span class="md:hidden">CRP 24/04229 </span>
   </div>
 
